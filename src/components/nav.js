@@ -17,7 +17,7 @@ class DropDown extends Component {
           <option value="medium">Medium</option>
           <option value="large">Large</option>
         </select>
-        <label>enteries</label>
+        <label>Entries</label>
       </div>
       
     );
