@@ -10,7 +10,7 @@ class Pagination extends Component {
 						<Link to="" className="active">1</Link>
 						<Link to="/medium" className="active">2</Link>
 						<Link to="/large" className="active">3</Link>
-            <Link to="/large" className="active">4</Link>
+                                                <Link to="/large" className="active">4</Link>
 						<Link>&raquo;</Link>
 					</div>
 				</div>
