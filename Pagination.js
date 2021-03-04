@@ -1,25 +1,21 @@
-import React from 'react';
-
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
-  const pageNumbers = [];
-
-  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
-    pageNumbers.push(i);
-  }
-
-  return (
-    <nav>
-      <ul className='pagination'>
-        {pageNumbers.map(number => (
-          <li key={number} className='page-item'>
-            <a onClick={() => paginate(number)} href='!#' className='page-link'>
-              {number}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-};
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import "./pagination.css";
+class Pagination extends Component {
+	render(){
+    return(
+        <div>
+					<div className="pagination">
+						<Link>&laquo;</Link>
+						<Link to="" className="active">1</Link>
+						<Link to="/medium" className="active">2</Link>
+						<Link to="/large" className="active">3</Link>
+            <Link to="/large" className="active">4</Link>
+						<Link>&raquo;</Link>
+					</div>
+				</div>
+    )
+	}
+}
 
 export default Pagination;
